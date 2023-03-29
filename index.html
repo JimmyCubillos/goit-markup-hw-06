@@ -450,6 +450,26 @@
             </li>
           </ul>
         </div>
+        <div class="form-container">
+          <p class="footer-form-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+          <form class="footer-form">
+            <div class="footer-form-field">
+              <label class="form-label" for="email"></label>
+              <input
+                class="footer-form-input"
+                type="text"
+                id="email"
+                placeholder="Correo electrónico"
+              />
+            </div>
+            <button class="send-button" type="submit">
+              Suscríbase
+              <svg class="icon-sbmit" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-enviar-cono"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -498,7 +518,20 @@
               placeholder="Introduzca el texto"
             ></textarea>
           </div>
-          <div class="checkbox-field"></div>
+          <div class="checkbox-field">
+            <label class="check">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="policy"
+                value="accept"
+              />
+              <p class="checkbox">
+                Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones
+              </p>
+            </label>
+          </div>
         </form>
         <button data-modal-close class="modal-close">
           <svg class="close-icon" width="18px" height="18px">
