@@ -70,8 +70,8 @@
                   <use href="./images/symbol-defs.svg#icon-antena-1"></use>
                 </svg>
               </div>
-              <h3>ATENCIÓN A LOS DETALLES</h3>
-              <p>
+              <h3 class="benefits-subtitle">ATENCIÓN A LOS DETALLES</h3>
+              <p class="benefits-text">
                 Nos adentramos en todos los detalles y procesos de su negocio,
                 para así desarrollar una solución a su medida.
               </p>
@@ -82,8 +82,8 @@
                   <use href="./images/symbol-defs.svg#icon-reloj-1"></use>
                 </svg>
               </div>
-              <h3>PUNTUALIDAD</h3>
-              <p>
+              <h3 class="benefits-subtitle">PUNTUALIDAD</h3>
+              <p class="benefits-text">
                 Con nosotros, usted puede sentirse seguro y protegido. Un
                 principio importante de la empresa: respetar su tiempo y
                 respetar los plazos acordados.
@@ -95,8 +95,8 @@
                   <use href="./images/symbol-defs.svg#icon-diagrama-1"></use>
                 </svg>
               </div>
-              <h3>PLANIFICACIÓN</h3>
-              <p>
+              <h3 class="benefits-subtitle">PLANIFICACIÓN</h3>
+              <p class="benefits-text">
                 Usted podrá observar y participar en cada fase del desarrollo y
                 aplicación de soluciones.
               </p>
@@ -107,8 +107,8 @@
                   <use href="./images/symbol-defs.svg#icon-astronauta-1"></use>
                 </svg>
               </div>
-              <h3>TECNOLOGÍA MODERNA</h3>
-              <p>
+              <h3 class="benefits-subtitle">TECNOLOGÍA MODERNA</h3>
+              <p class="benefits-text">
                 Usamos herramientas innovadoras para resolver las tareas
                 asignadas. Es hora de simplificar los procesos laborales.
               </p>
@@ -118,7 +118,7 @@
       </section>
       <section class="section">
         <div class="services container">
-          <h2>A qué nos dedicamos</h2>
+          <h2 class="services-subtitle">A qué nos dedicamos</h2>
           <ul class="img-container-work list">
             <li class="services-item">
               <img
@@ -149,7 +149,7 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2>Nuestro equipo</h2>
+          <h2 class="team-subtitle">Nuestro equipo</h2>
           <ul class="team-images list">
             <li class="card">
               <img
@@ -158,7 +158,7 @@
                 width="270px"
               />
               <div class="footer-card">
-                <h4>Andrés Cubo</h4>
+                <h4 class="team-member">Andrés Cubo</h4>
                 <p>Diseñador de productos</p>
                 <ul class="icon-list list">
                   <li>
@@ -203,7 +203,7 @@
             <li class="card">
               <img src="./images/carla.jpg" alt="foto de Carla" width="270px" />
               <div class="footer-card">
-                <h4>Carla Palacios</h4>
+                <h4 class="team-member">Carla Palacios</h4>
                 <p>Desarrolladora Frontend</p>
                 <ul class="icon-list list">
                   <li>
@@ -248,7 +248,7 @@
             <li class="card">
               <img src="./images/mario.jpg" alt="foto de Mario" width="270px" />
               <div class="footer-card">
-                <h4>Mario Dorado</h4>
+                <h4 class="team-member">Mario Dorado</h4>
                 <p>Marketing</p>
                 <ul class="icon-list list">
                   <li>
@@ -293,7 +293,7 @@
             <li class="card">
               <img src="./images/pablo.jpg" alt="foto de Pablo" width="270px" />
               <div class="footer-card">
-                <h4>Pablo Mijangos</h4>
+                <h4 class="team-member">Pablo Mijangos</h4>
                 <p>Diseñador IU</p>
                 <ul class="icon-list list">
                   <li>
@@ -340,7 +340,7 @@
       </section>
       <section class="clientes-regulares">
         <div class="container">
-          <h2>Clientes Regulares</h2>
+          <h2 class="clientes-regulares-subtitle">Clientes Regulares</h2>
           <ul class="icon-list-regulares list">
             <li>
               <a href="#" class="icon-regulares">
@@ -454,6 +454,52 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <p class="form-title">Deje sus datos, nos contactaremos con usted</p>
+          <div class="form-field">
+            <label class="form-label" for="name">Nombre</label>
+            <div class="input-field">
+              <input class="form-input" type="text" id="name" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/symbol-defs.svg#icon-persona-negra-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="phone">Teléfono</label>
+            <div class="input-field">
+              <input class="form-input" type="text" id="phone" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/symbol-defs.svg#icon-telfono-negro-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">E-mail</label>
+            <div class="input-field">
+              <input class="form-input" type="text" id="email" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/symbol-defs.svg#icon-correo-electrnico-negro-18dp-1"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="comment-field">
+            <label class="form-label" for="comment">Comentarios</label>
+            <textarea
+              class="form-input"
+              name="comment"
+              id="comment"
+              placeholder="Introduzca el texto"
+            ></textarea>
+          </div>
+          <div class="checkbox-field"></div>
+        </form>
         <button data-modal-close class="modal-close">
           <svg class="close-icon" width="18px" height="18px">
             <use
