@@ -227,34 +227,29 @@ body {
   transform: translate(-50%, -50%);
   transition: transform 250ms var(--cubic-bezier);
 }
+.form {
+  display: flex;
+  flex-direction: column;
+}
 .form-title {
   color: var(--text-color);
-  position: absolute;
   font-size: 20px;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
-}
-.form-field {
-  position: relative;
-  width: 448px;
-  height: 40px;
-  margin-bottom: 28px;
-  border-radius: 4px;
 }
 .form-label {
   font-size: 12px;
   color: var(--paragraph-color);
 }
-.input-field {
-  width: 448px 40px;
-  margin-bottom: 28px;
-}
 .form-input {
-  width: 448px;
-  height: 40px;
+  position: relative;
+  width: 100%;
   padding: 11px 11px 11px 41px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
   transition: border-color 250ms var(--cubic-bezier);
 }
 .form-input:focus {
@@ -270,6 +265,14 @@ body {
   transform: translateY(-50%);
   fill: var(--text-color);
   transition: fill 250ms var(--cubic-bezier);
+}
+.check {
+  display: flex;
+  gap: 8.38px;
+}
+.form-button-send {
+  display: flex;
+  justify-content: center;
 }
 .modal-close {
   position: absolute;
@@ -516,7 +519,6 @@ h2 {
   fill: var(--secondary-text-color);
   border-radius: 4px;
   cursor: pointer;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: box-shadow 250ms var(--cubic-bezier);
 }
 .send-button:hover {
