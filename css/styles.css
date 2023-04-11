@@ -251,6 +251,7 @@ body {
   border-radius: 4px;
   margin-bottom: 10px;
   transition: border-color 250ms var(--cubic-bezier);
+  resize: none;
 }
 .form-input:focus {
   border-color: var(--background-color);
@@ -265,6 +266,12 @@ body {
   transform: translateY(-50%);
   fill: var(--text-color);
   transition: fill 250ms var(--cubic-bezier);
+}
+.form-field {
+  position: relative;
+}
+.checkbox-field {
+  margin-bottom: 30px;
 }
 .check {
   display: flex;
@@ -286,8 +293,13 @@ body {
   border-radius: 50px;
   top: 8px;
   right: 8px;
+  transition: fill 250ms var(--cubic-bezier),
+    border-color 250ms var(--cubic-bezier);
 }
-
+.modal-close:hover {
+  fill: var(--background-color);
+  border-color: var(--background-color);
+}
 .title {
   width: 696px;
   font-size: 44px;
